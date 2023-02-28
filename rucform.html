@@ -1,0 +1,202 @@
+<html>
+<head>
+<title> Form </title>
+</head>
+<body background="img.jpeg">
+<h1> <center> Registration Form </center> </h1>
+<form name="form" onsubmit="check();return false">
+<center>
+<table cellspacing="15">
+<tr>
+ <td> User Id: </td>
+ <td><input type="text" name="userid" placeholder="Enter userid"></td>
+</tr>
+
+<tr>
+ <td>Password:</td>
+ <td><input type="password" name="password" placeholder="Enter password"></td>
+</tr>
+   
+        <tr>
+ <td>Name:</td>
+ <td><input type="text" name="fullname" placeholder="Enter your name"></td>
+</tr>
+
+<tr>
+ <td>Address:</td>
+          <td><input type="text" placeholder="Enter your address"></td>
+</tr>
+
+<tr>
+ <td>
+   Country:
+ </td>
+<td>
+<select name="country">
+<option value="">Please select a country</option>
+<option value="India">India</option>
+                <option value="Dubai">Dubai</option>
+                <option value="England">England</option>
+<option value="China">china</option>
+</select>
+</td>
+</tr>
+
+<tr>
+ <td>Zip Code:</td>
+ <td><input type="text" name="zipcode" placeholder="Enter zipcode"></td>
+</tr>
+
+<tr>
+   <td>Email:</td>
+            <td><input type="text" name="email" placeholder="Enter email"></td>
+</tr>
+
+<tr>
+  <td>Sex:</td>
+  <td><input type="radio" name="s" value="male"> Male
+  <input type="radio" name="s" value="female"> Female</td>
+</tr>
+
+<tr>
+  <td>Language:</td>
+  <td><input type="checkbox" id="l">English <input type="checkbox" name="lang" id="l">Non English</td>
+</tr>
+
+<tr>
+  <td>About:</td>
+  <td><textarea rows="5"></textarea></td>
+</tr>
+
+<tr>
+<td>
+
+</td>
+<td>
+<input type="submit">
+</td>
+</tr>
+</table>
+
+</center>
+</form>
+
+<script>
+function check()
+{    
+     var userid=document.form.userid.value;
+     var pass=document.form.password.value;
+     var name=document.form.fullname.value;
+     var country=document.form.country.value;
+     var zip=document.form.zipcode.value;
+     var email=document.form.email.value;
+     var gen=document.form.s.value;
+     var pat = /^[A-Za-z]+$/;
+     var e=/[a-z0-9._%+-]+@[a-z.-]+\.[a-z]{3,3}$/
+
+    if (userid == "")
+     {
+                alert("Enter the userid");
+                document.form.userid.focus();
+                return false;
+            }
+   else if(userid.length <5 || userid.length >12)
+   {
+    alert("Length of userid is between 5 to 12")
+    document.form.userid.focus();
+                return false
+    }
+
+  if (pass == "")
+    {  
+          alert("Enter the password");
+          document.form.password.focus();
+          return false;
+     }
+ else if(pass.length <7 || pass.length >12)
+ {
+    alert("Length of password is between 7 to 12")
+    document.form.password.focus();
+                return false
+    }
+
+ if (name == "")
+{
+                alert("Enter the name");
+                document.form.fullname.focus();
+                return false;
+            }
+      else if(name.match(pat))
+     {
+
+     }
+   else
+     {
+     alert("Please Enter Albhabets only.");
+     return false;
+     }
+
+
+ if (country == "")
+{
+                alert("Select the country");
+                document.form.country.focus();
+                return false;
+            }
+
+ if (zip == "")
+{
+                alert("Enter the zipcode");
+                document.form.zipcode.focus();
+                return false;
+            }
+  else if(isNaN(zip))
+{
+                alert("Enter number only");
+                document.form.zipcode.focus();
+                return false;
+            }
+
+
+
+
+ if (email == "")
+{
+                alert("Enter the email");
+                document.form.email.focus();
+                return false;
+            }
+            else if(email.match(e))
+     {
+
+     }
+   else
+     {
+     alert("Please Enter email correctly.");
+     return false;
+     }
+
+ if (gen == "")
+{
+                alert("Select the gender");
+                // document.form.s.focus();
+                // return false;
+            }
+
+
+    if(document.getElementById('l').checked)
+    {
+        return true;
+    }
+    else
+    {
+        alert ("Select the language");
+        return false;
+    }
+ 
+ 
+}
+
+</script>
+</body>
+</html>

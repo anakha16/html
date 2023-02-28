@@ -1,0 +1,373 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<form>
+
+<center>
+
+<h1><b>ONLINE EXAMINATION<b></h1>
+
+<label>Enter your name</label>
+
+<input type="text">
+
+<br><br>
+
+<label>Enter your Register No</label>
+
+<input type="text">
+
+<br><br>
+
+</center>
+
+ 
+
+<h2>Answer the following questions:-</h2>
+
+ 
+
+<h3>1. Javascript is a _____ language?  </h3>
+
+<input type="radio" name="language" id="one">
+
+<label>object oriented</label>
+
+<br>
+
+<input type="radio" name="language">
+
+<label>object based</label>
+
+<br>
+
+<input type="radio" name="language">
+
+<label>procedure oriented</label>
+
+<br>
+
+<input type="radio" name="language">
+
+<label>None of these</label>
+
+ 
+
+ 
+
+ 
+
+ 
+
+<h3> 2.Which of the following methods is used to access HTML elements using Javascript?</h3>
+
+<input type="radio" name="get" >
+
+<label>getElementById()</label>
+
+<br>
+
+<input type="radio" name="get">
+
+<label>getElementByClassName()</label>
+
+<br>
+
+<input type="radio" name="get" id="two">
+
+<label>Both A and B</label>
+
+<br>
+
+<input type="radio" name="get">
+
+<label>None of these</label>
+
+ 
+
+ 
+
+ 
+
+<h3>3.Which of the following keywords is used to define a variable in Javascript?</h3>
+
+<input type="radio" name="data">
+
+<label>var</label>
+
+<br>
+
+<input type="radio" name="data">
+
+<label>let</label>
+
+<br>
+
+<input type="radio" name="data" id="three">
+
+<label>Both A and B</label>
+
+<br>
+
+<input type="radio" name="data">
+
+<label>None of these</label>
+
+ 
+
+ 
+
+ 
+
+ 
+
+<h3> 4.Upon encountering empty statements, what does the Javascript Interpreter do? </h3>
+
+<input type="radio" name="empty">
+
+<label>Throws an error</label>
+
+<br>
+
+<input type="radio" name="empty" id="four">
+
+<label>ignores statement</label>
+
+<br>
+
+<input type="radio" name="empty">
+
+<label>Gives a warning</label>
+
+<br>
+
+<input type="radio" name="empty">
+
+<label>None of these</label>
+
+ 
+
+ 
+
+ 
+
+<h3> 5.Which of the following methods can be used to display data in some form using Javascript?</h3>
+
+<input type="radio" name="method">
+
+<label>document.write()</label>
+
+<br>
+
+<input type="radio" name="method">
+
+<label>console.log()</label>
+
+<br>
+
+<input type="radio" name="method" >
+
+<label>window.alert()</label>
+
+<br>
+
+<input type="radio" name="method" id="five">
+
+<label>None of these</label>
+
+ 
+
+ 
+
+<h3> 6 What is JavaScript?</h3>
+
+<input type="radio" name="javascript" id="six">
+
+<label> JavaScript is a scripting language used to make the website interactive</label>
+
+<br>
+
+<input type="radio" name="javascript">
+
+<label> JavaScript is an assembly language used to make the website interactive</label>
+
+<br>
+
+<input type="radio" name="javascript" >
+
+<label> JavaScript is a compiled language used to make the website interactive</label>
+
+<br>
+
+<input type="radio" name="javascript">
+
+<label>None of these</label>
+
+ 
+
+ 
+
+ 
+
+<h3> 7. Which of the following is not javascript data types?</h3>
+
+<input type="radio" name="type">
+
+<label> Null type</label>
+
+<br>
+
+<input type="radio" name="type">
+
+<label>  Undefined type</label>
+
+<br>
+
+<input type="radio" name="type" >
+
+<label>Number type</label>
+
+<br>
+
+<input type="radio" name="type" id="seven">
+
+<label>All of these</label>
+
+ 
+
+ 
+
+<h3>8. Which of the following object is the main entry point to all client-side JavaScript features and APIs? </h3>
+
+<input type="radio" name="object">
+
+<label>position</label>
+
+<br>
+
+<input type="radio" name="object" id="eight">
+
+<label>windows</label>
+
+<br>
+
+<input type="radio" name="object">
+
+<label>standard</label>
+
+<br>
+
+<input type="radio" name="object">
+
+<label>None of these</label>
+
+<br><br><br>
+
+ 
+
+<center>
+
+<button type="submit" onclick=score() style="background-color:blue;color:white;height:50px;width:200px"><b>Your Score</b></button>
+
+</center>
+
+<br><br><br>
+
+ 
+
+</form>
+
+</body>
+
+ 
+
+<script>  
+
+function score()
+
+{
+
+ 
+                                    
+var score=0;
+
+if(document.getElementById("one").checked)
+
+{
+
+  score=score+1;
+
+}
+
+if(document.getElementById("two").checked)
+
+{
+
+  score=score+1;
+
+}
+
+if(document.getElementById("three").checked)
+
+{
+
+  score=score+1;
+
+}
+
+if(document.getElementById("four").checked)
+
+{
+
+  score=score+1;
+
+}
+
+if(document.getElementById("five").checked)
+
+{
+
+  score=score+1;
+
+}
+
+if(document.getElementById("six").checked)
+
+{
+
+  score=score+1;
+
+}
+
+if(document.getElementById("seven").checked)
+
+{
+
+  score=score+1;
+
+}
+
+if(document.getElementById("eight").checked)
+
+{
+
+  score=score+1;
+
+}
+
+alert("your score is "+score);
+
+}
+
+</script>
+
+ 
+
+</html>
+
+ 
