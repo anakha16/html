@@ -1,0 +1,35 @@
+<html>
+<head>
+</head>
+<body>
+<br>
+<br>
+<hr>
+<h1 id="main">This is a heading.</h1>
+<hr>
+<p>This is a paragraph.</p>
+<h2>Change webpage background to 
+<button onclick=bgcolor("blue")>BLUE</button> 
+<button onclick=bgcolor("red")>RED</button>
+<button onclick=bgcolor("green")>GREEN</button>
+</h2>
+
+<h2>Change heading background to 
+<button onclick=headcolor("yellow")>YELLOW</button> 
+<button onclick=headcolor("orange")>ORANGE</button>
+<button onclick=headcolor("red")>RED</button>
+</h2>
+<script>
+function bgcolor(colour)
+{
+ document.body.style.background=colour;
+}
+function headcolor(colour)
+{
+ var c=document.getElementById("main");
+ c.style.background=colour;
+}
+</script>
+</body>
+
+</html>
